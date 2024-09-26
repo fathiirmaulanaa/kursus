@@ -1,0 +1,162 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header.scrolled {
+  background-color: #333;
+  transition: background-color 0.3s ease;
+}
+
+header.scrolled nav ul li a {
+  color: #fff;
+}
+/* Hero Section */
+.hero {
+  background: url('Kursus.jpg') no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.hero-content{
+    
+  color: #fff;
+  
+  
+}
+.hero-content h2 {
+  font-size: 48px;
+  margin-bottom: 20px;;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.btn-primary {
+  background-color: #ff5733;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background-color: #e74c3c;
+}
+
+/* Courses Section */
+.courses {
+  padding: 50px 0;
+  margin-top: 50px;
+}
+
+.courses h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.course-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  width: 35%;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0 5px;
+}
+
+.course-card h3 {
+  margin-bottom: 10px;
+}
+
+/* About Section */
+.about, .contact {
+  padding: 50px 0;
+}
+
+/* Contact Section */
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}

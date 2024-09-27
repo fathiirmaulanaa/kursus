@@ -1,88 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Kursus Online Terbaik | Belajar Kapan Saja</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+        <title>Website Portofolio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    </head>
+    <body>
+        <!-- menu -->
+        <nav>
+            <div class="wrapper">
+            <div class="logo"><img src="images/course/9_27_2024_4_14_53_PM-removebg-preview.png"/></div>
+            <div class="menu">
+                <ul>
+                    <li><a href=''>Home</a></li>
+                    <li><a href=''>About</a></li>
+                    <li><a href=''>Free Course</a></li>
+                </ul>
+            </div>
+            <button class="hamburger-menu" onclick="displayMenu()">
+                <i class="fa-solid fa-bars icon-bars"></i>
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </button>
+            </div>
+        </nav>
 
-  <!-- Navbar -->
-  <header>
-    <div class="container">
-      <h1 class="logo">KursusPro</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#courses">Courses</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  
-  <!-- Hero Section -->
-    <section id="home" class="hero">
-    <div class="hero-content">
-      <h2>Belajar Kapan Saja, Dimana Saja</h2>
-      <p>Kursus online berkualitas dengan berbagai topik menarik.</p>
-      <a href="#courses" class="btn-primary">Lihat Kursus</a>
-    </div>
-  </section>
-
-  <!-- Courses Section -->
-  <section id="courses" class="courses">
-    <div class="container">
-      <h2>Kursus Unggulan</h2>
-      <div class="course-list">
-        <div class="course-card">
-          <h3>Web Development</h3>
-          <p>Belajar membuat website dari dasar hingga mahir.</p>
+    <!-- hero / jumbotron -->
+    <header>
+        <div class="header-opacity"></div>
+        <div class="header-jumbotron">
+            <h4>KursusPro.id</h4>
+            <h5>Belajar Kapan Saja,<br/>Dimana Saja</h5>
+            <p>Kursus online berkualitas dengan berbagai topik menarik.</p>
+            <a href="" class="button button-xl" >Register Now</a>
         </div>
-        <div class="course-card">
-          <h3>Desain Grafis</h3>
-          <p>Pelajari teknik desain grafis yang menarik dan praktis.</p>
+    </header>
+
+<!-- statistic -->
+    <section id="statistic">
+        <div class="wrapper">
+        <div>
+            <p><i class="fa-solid fa-code"></i>Web Development</p>
+            <small>Building seamless digital experiences.</small>
         </div>
-        <div class="course-card">
-          <h3>Fotografi</h3>
-          <p>Kuasai seni fotografi dan hasilkan foto yang menawan.</p>
+        <div>
+            <p><i class="fa-solid fa-palette"></i>Design Grafis</p>
+            <small>Simple designs, big impact.</small>
         </div>
-      </div>
+        <div>
+            <p><i class="fa-solid fa-camera"></i>Fotografi</p>
+            <small>Mastering new angles, one shot at a time.</small>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- kursus unggulan -->
+    <section id="kursus-unggulan">
+        <div class="wrapper">
+        <h4>Kursus <span>Unggulan</span></h4>
+        <p>Web Development, Desain Grafis & Fotografi</p>
+
+        <div class="grid">
+         <div class="item">
+            <div class="item-detail">
+                <p>Belajar membuat website dari dasar hingga mahir.</p>
+                <div>
+                    <small><i class="fa-solid fa-clock"></i> 3 jam</small>   
+                    <a href="" class="button"><i class="fa-solid fa-cart-shopping"></i> Ikuti</a>
+                </div>
+            </div>
+         </div>
+         <div class="item">
+            <div class="item-detail">
+                <p>Pelajari teknik desain grafis yang menarik dan praktis.</p>
+                <div>
+                    <small><i class="fa-solid fa-clock"></i> 3 jam</small>   
+                    <a href="" class="button"><i class= "fa-solid fa-cart-shopping"></i> Ikuti</a>
+                </div>
+            </div>
+         </div>
+         <div class="item">
+            <div class="item-detail">
+                <p>Kuasai seni fotografi dan hasilkan foto yang menawan</p>
+                <div>
+                    <small><i class="fa-solid fa-clock"></i> 3 jam</small>   
+                    <a href="" class="button"><i class="fa-solid fa-cart-shopping"></i> Ikuti</a>
+                </div>
+            </div>
+         </div>
+        </div>
     </div>
-  </section>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>Tentang Kami</h2>
-      <p>KursusPro menyediakan platform kursus online yang terjangkau dan berkualitas untuk semua orang yang ingin belajar dan meningkatkan keterampilan mereka.</p>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Hubungi Kami</h2>
-      <form action="https://wa.me/62XXXXXXXXXXX" method="POST">
-        <input type="text" name="name" placeholder="Nama" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" placeholder="Pesan" required></textarea>
-        <button type="submit" class="btn-primary">Kirim</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 KursusPro. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- about -->
+    <section id="about">
+        <div class="wrapper">
+        <h4>About</h4>
+        <p>Menemani setiap langkah berjuang.</p>
+        <div>
+            <div class="foto"><img src="images/"/></div>
+            <div class="desc">
+                <p>KursusPro menawarkan kursus berkualitas tinggi, termasuk dalam bidang pemrograman dan ilmu komputer.</p>
+                <p>KursusPro sering kali berujung pada sertifikat profesional atau spesialisasi yang diakui. Anda bisa belajar Python, JavaScript, cloud computing, dan AI dari instruktur yang berasal dari lembaga akademik dan industri.</p>
+                <div class="social">
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+              </div>
+             </div>
+            </div>
+          </section>
 
 
-<script src="script.js"></script>
-</body>
-</html>
+          <!-- free course -->
+          <section id="free-course">
+            <div class="wrapper">
+                <h4>Free <span>Course</span></h4>
+                <p>Kursus gratis. Tanpa biaya ! </p>
+
+              
+        <div class="grid">
+            <div class="item">
+               <div class="item-detail">
+                <img src="images/" />
+                   <div>
+                       <small><i class="fa-solid fa-gift"></i> for you !!</small>   
+                       <a href="" class="button"><i class="fa-solid fa-lightbulb"></i> Dapatkan Sekarang</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-detail">
+                         <img src="images/" />
+                            <div>
+                                <small><i class="fa-solid fa-gift"></i> for you !!</small>   
+                                <a href="" class="button"><i class="fa-solid fa-lightbulb"></i> Dapatkan Sekarang</a>
+                                 </div>
+                               </div>
+                             </div>
+                             <div class="item">
+                                <div class="item-detail">
+                                 <img src="images/" />
+                                    <div>
+                                        <small><i class="fa-solid fa-gift"></i> for you !!</small>   
+                                        <a href="" class="button"><i class="fa-solid fa-lightbulb"></i> Dapatkan Sekarang</a>
+                                         </div>
+                                       </div>
+                                     </div>
+                                   </div>
+                                 </div>
+                              </section>
+
+                              <footer>
+                                <div class="wrapper">&copy; 2024 KursusPro</div>
+                              </footer>
+                              <script src="js/main.js"></script>
+                            </body>
+                          </html>
+
+
+
+
+
+

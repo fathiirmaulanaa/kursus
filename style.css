@@ -1,162 +1,551 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: "Kanit", system-ui;
 }
 
-* {
-  box-sizing: border-box;
+.wrapper {
+    width: 1024px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
+/*
+/ menu
+*/
+
+nav {
+    background-color: #343131;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
+
+nav > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    align-items: center;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu > ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.menu > ul > li > a {
+    text-decoration: none;
+    color: #fff;  
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo > img {
+    height: 150px;
+}
+
+/*
+* Hero / jumbotron
+*/
 
 header {
-  background-color: #333;
-  color: #fff;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  padding: 1rem 0;
+    background: url("../images/course/snapedit_1727352878754.jpeg");
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: "Kanit", system-ui;
+    letter-spacing: 5px;
+    text-shadow: 0 0 4px #000;
 }
 
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header-opacity {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
 }
 
-header .logo {
-  font-size: 24px;
-  font-weight: bold;
+.header-jumbotron {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;   
 }
 
-header nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.header-jumbotron > h4 {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
-header nav ul li {
-  display: inline-block;
-  margin-left: 20px;
+.header-jumbotron > h5 {
+    color: #fff;
+    margin: 0px;
+    padding: 5px;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    text-transform: uppercase;
 }
 
-header nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
+.header-jumbotron > p {
+    padding: 5px;
+    margin: 0px 5px 20px 5px;
+    color: #fff;
 }
 
-header.scrolled {
-  background-color: #333;
-  transition: background-color 0.3s ease;
+a {
+    text-decoration: none;
+    color: #fae9ef;
+    text-shadow: none;
 }
 
-header.scrolled nav ul li a {
-  color: #fff;
-}
-/* Hero Section */
-.hero {
-  background: url('Kursus.jpg') no-repeat center center/cover;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-top: 60px;
+.button {
+    background-color: #1e2a6f;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-size: "Kanit", system-ui;
 }
 
-.hero-content{
-    
-  color: #fff;
-  
-  
-}
-.hero-content h2 {
-  font-size: 48px;
-  margin-bottom: 20px;;
+.button-xl {
+    font-size: 1.4rem;
+    padding: 20px;
 }
 
-.hero-content p {
-  font-size: 20px;
-  margin-bottom: 40px;
+/*
+* statistic
+*/
+
+#statistic {
+    background-color:#343131;
+    color: #fff;
+    font-family: "Kanit", system-ui;
 }
 
-.btn-primary {
-  background-color: #ff5733;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
+#statistic > .wrapper {
+    padding: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.btn-primary:hover {
-  background-color: #e74c3c;
+#statistic > .wrapper > div {
+    text-align: center;
 }
 
-/* Courses Section */
-.courses {
-  padding: 50px 0;
-  margin-top: 50px;
+#statistic > .wrapper > div > p {
+    font-size: 1.8rem;
+    margin: 0px;
+    padding: 0px;
 }
 
-.courses h2 {
-  text-align: center;
-  margin-bottom: 20px;
+#statistic > .wrapper > div > p > i {
+    margin-right: 10px;
+    font-size: 3.5rem;
 }
 
-.course-list {
-  display: flex;
-  justify-content: space-between;
+#statistic > .wrapper > div > small {
+    font-size: 1.5rem;
 }
 
-.course-card {
-  background-color: #f4f4f4;
-  padding: 20px;
-  width: 35%;
-  text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin: 0 5px;
+/*
+* kursus unggulan
+*/
+
+#kursus-unggulan {
+    background-color: #fff;
+    color:#fff;
 }
 
-.course-card h3 {
-  margin-bottom: 10px;
+#kursus-unggulan > .wrapper {
+    padding: 50px 0px 50px 0px;
 }
 
-/* About Section */
-.about, .contact {
-  padding: 50px 0;
+#kursus-unggulan > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Kanit", system-ui;
+    color: #343131;
 }
 
-/* Contact Section */
-form input, form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+#kursus-unggulan > .wrapper > h4 > span {
+    color: #343131;
 }
 
-form button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+#kursus-unggulan > .wrapper > p {
+    text-align: center;
+    font-family: "Kanit", system-ui;
+    color: #343131;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 50px;
 }
 
-/* Footer */
+.grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 50px;
+}
+
+.grid > .item {
+    border: 1px solid #fff;
+    background-color:#040c39;
+    border-radius: 5px;
+    position: relative;
+}
+
+.grid > .item > img {
+    width: 20%;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.grid > .item > .item-detail {
+    font-family: "Kanit", system-ui;
+    padding: 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 70%;
+}
+
+.grid > .item > .item-detail > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid > .item > .item-detail > div > small {
+    color: #EADBC8;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.grid > .item > .item-detail > div > a {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/*
+* about 
+*/
+
+#about {
+    background-color: #D8D2C2;
+    color:#1f3a56;
+}
+
+#about > .wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#about > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Kanit", system-ui;
+}
+
+#about > .wrapper > p {
+    text-align: center;
+    font-family: "Kanit", system-ui;
+    color: #344C64;;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+
+#about > .wrapper > div {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about > .wrapper > div > .foto {
+    width: 20%;
+}
+
+#about > .wrapper > div > .foto > img {
+    max-width: 100%;
+}
+
+#about > .wrapper > div > .desc {
+    width: 80%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #ffffff;
+    color: #344C64;
+    border-radius: 10px;
+    font-family: "Kanit", system-ui;
+}
+
+#about > .wrapper > div > .desc > p {
+    margin: 0px 0px 10px 0px;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+}
+
+#about > .wrapper > div > .desc > .social {
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+}
+
+#about > .wrapper > div > .desc > .social > a {
+    color: #add4a2
+}
+
+/*
+* free course
+*/
+
+#free-course {
+    background-color: #fff;
+}
+
+#free-course > .wrapper {
+    padding: 50px 0px 50px 0px;s
+}
+
+#free-course > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Kanit", system-ui;
+    color: #402B3A;
+}
+
+#free-course > .wrapper > h4 > span {
+    color: #1e2a6f;
+}
+
+#free-course > .wrapper > p {
+    text-align: center;
+    font-family: "Kanit", system-ui;
+    color: #402B3A;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+
+#free-course > .wrapper > .grid > .item {
+    background-color: #343131;
+    color: #343131;
+    margin: 0px;
+    padding: 0px;
+}
+
+#free-course > .wrapper > .grid > .item > .item-detail {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.4rem;
+    width: 100%;
+}
+
+#free-course > .wrapper > .grid > .item > .item-detail > img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#free-course > .wrapper > .grid > .item > .item-detail > div {
+    padding: 10px 20px 10px 20px;
+}
+
+/*
+* copyright
+*/
+
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
+    background-color: #3C3D37;
+    color: #FFF;
+    text-align: center;
+}
+
+
+footer > .wrapper {
+    padding: 30px 0px 30px 0px;
+}
+
+/*
+* hamburger menu
+*/
+button.hamburger-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+button.hamburger-menu > i {
+    color: #000;
+    font-size: 1.5rem;
+}
+
+button.hamburger-menu > i.icon-close {
+    display: none;
+}
+
+
+/*
+* 1024, 900, 768, 600, 450
+*/
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #statistic > .wrapper > div > p {
+        font-size: 2.5rem;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #statistic > .wrapper > div > p > i {
+        font-size: 2.5rem;
+    }
+    #statistic > .wrapper > div > small {
+        font-size: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 45% 45%;
+    }
+    .item > img {
+        width: 8%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        width: 60%;
+    }
+    .header-jumbotron > h4 {
+        font-size: 1.5rem;
+    }
+    .header-jumbotron > h5 {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .header-jumbotron > p {
+        font-size: 0.8rem;
+    }
+
+    .button {
+        padding: 5px;
+    }
+    .button-xl {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    #statistic > .wrapper > div > p {
+        font-size: 1.5rem;
+        margin: 0px;   
+    }
+
+    #statistic > .wrapper > div > p > i {
+        font-size: 1.5rem;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 100px;
+    }
+
+    #statistic > .wrapper {
+        padding: 10px;
+    }
+
+    #statistic > .wrapper > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #statistic > .wrapper > div > small {
+        font-size: 1.5rem;
+        padding-left: 10px;
+    }
+
+    #about-khiara > .wrapper > div {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #about-khiara > .wrapper > div > .foto {
+        width: 50%;
+    }
+
+    #about-khiara > .wrapper > div > .foto > img {
+        max-width: 100%;
+    }
+
+    #about-khiara > .wrapper > div > .desc {
+        width: 70%;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    #about-khiara > .wrapper > div > .desc > .social {
+        margin: auto;
+    }
+
+    button.hamburger-menu {
+        display: inline;
+    }
+    .menu {
+        display: none;
+    }
+
+    .tampil {
+        display: inline;
+    }
+    .tampil > ul {
+        flex-direction: column;
+        background: #000;
+        width: 100%;
+        position: fixed;
+        top: 85px;
+        left: 0;
+    }
+
+    .tampil > ul > li {
+        padding: 10px 20px 10px 20px;
+    }
 }

@@ -591,9 +591,7 @@ button.hamburger-menu > i.icon-close {
     font-size: 1rem;
   }
   #login{
-    padding: 0px;
-    background-color: #34313100;
-    font-size: 11px;
+    display: none;
   }
 
 /* 

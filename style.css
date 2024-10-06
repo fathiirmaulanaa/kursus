@@ -23,12 +23,13 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0px 3px 15px 2px rgba(0, 0, 0, 0.411);
 }
 
 nav > .wrapper {
   display: flex;
   justify-content: space-between;
-  font-size: 30px;
+  font-size: 25px;
   align-items: center;
 }
 
@@ -65,9 +66,29 @@ nav > .wrapper {
 }
 
 .logo > img {
-  height: 90px;
+  height: 40px;
 }
-
+#login{
+  padding: 10px 45px;
+  font-family: "Kanit", system-ui;
+  font-weight: bold;
+  color: white;
+  background-color: #2034a3;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+#login:hover{
+  background-color: #2d48dd;
+}
 /*
 * Hero / jumbotron
 */
@@ -567,8 +588,14 @@ button.hamburger-menu > i.icon-close {
   }
 
   .menu > ul > li > a{
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
+  #login{
+    padding: 0px;
+    background-color: #34313100;
+    font-size: 11px;
+  }
+
 /* 
   button.hamburger-menu {
     display: inline;

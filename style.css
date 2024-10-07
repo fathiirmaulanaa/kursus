@@ -10,7 +10,7 @@ body {
 .wrapper {
   width: 1024px;
   margin: auto;
-  padding: 20px 0px 20px 0px;
+  padding: 10px 0px 10px 0px;
 }
 
 /*
@@ -68,7 +68,7 @@ nav > .wrapper {
 .logo > img {
   height: 40px;
 }
-#login{
+#login {
   padding: 10px 45px;
   font-family: "Kanit", system-ui;
   font-weight: bold;
@@ -86,7 +86,7 @@ nav > .wrapper {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-#login:hover{
+#login:hover {
   background-color: #2d48dd;
 }
 /*
@@ -454,12 +454,17 @@ button.hamburger-menu {
 }
 
 button.hamburger-menu > i {
-  color: #000;
-  font-size: 1.5rem;
+  color: #ffffff;
+  font-size: 1.8rem;
 }
 
-button.hamburger-menu > i.icon-close {
-  display: none;
+#icon {
+  transition: transform 0.5s ease;
+  behavior: smooth;
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  -ms-transition: transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
 }
 
 /*
@@ -535,9 +540,9 @@ button.hamburger-menu > i.icon-close {
     height: 40px;
   }
   .grid {
-    grid-template-columns: 415px;
+    grid-template-columns: 432px;
   }
-  .grid>.item>.item-detail{
+  .grid > .item > .item-detail {
     margin: auto;
   }
   #statistic > .wrapper > div > p {
@@ -546,11 +551,11 @@ button.hamburger-menu > i.icon-close {
     margin: 0px;
     padding: 0px;
   }
-  
+
   #statistic > .wrapper > div > p > i {
     margin-right: 10px;
   }
-  
+
   #statistic > .wrapper {
     padding: 20px;
   }
@@ -574,7 +579,6 @@ button.hamburger-menu > i.icon-close {
     margin-top: -50px;
     margin-bottom: -5px;
     justify-content: center;
-
   }
 
   #about > .wrapper > div > .desc {
@@ -587,14 +591,19 @@ button.hamburger-menu > i.icon-close {
     margin: auto;
   }
 
-  .menu > ul > li > a{
+  .menu > ul > li > a {
     font-size: 1rem;
   }
-  #login{
+  #login {
     display: none;
   }
 
-/* 
+  .hidden {
+    display: none;
+  }
+  .nav-menu.active {
+    display: block;
+  }
   button.hamburger-menu {
     display: inline;
   }
@@ -616,8 +625,8 @@ button.hamburger-menu > i.icon-close {
 
   .tampil > ul > li {
     padding: 10px 20px 10px 20px;
-  } */
-  .footer>.wrapper{
-    padding: 10px ;
+  }
+  .footer > .wrapper {
+    padding: 10px;
   }
 }
